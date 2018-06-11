@@ -23,3 +23,20 @@ var getElementsByClassName = function(className) {
 
 };
 
+// Alternate Solution
+
+// var getElementsByClassName = function(className, node) {
+
+//   var node = node || document.body;
+//   var output = [];
+  
+//   if (node.classList && node.classList.contains(className)) {
+//     output.push(node);
+//   }
+//   for (var i = 0; i < node.children.length; i++) {
+//     output = output.concat(getElementsByClassName(className, node.children[i]));
+//   }
+
+//   return output;
+
+// };
